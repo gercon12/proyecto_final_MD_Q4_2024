@@ -1,0 +1,58 @@
+#Universidad San Carlos de Guatemala
+#PROYECTO FINAL.
+#14 Marzo 2024.
+#Maestria en Ingenieria para la Industria
+#con especialidad en Ciencias de la Computacion. 
+#Curso: Introducción a la minería de datos
+#Catedrático: MSc. ing. Kevin Adiel Lajpop Ajcapajá
+#Alumno:German Contreras Jacinto. 
+#Carnet: 999011685
+
+
+```{r}
+#CARGAR LIBRERIAS A UTILIZAR EN EL PROYECTO
+options(scipen = 999)
+library(dplyr)
+library(ggplot2) 
+library(readxl)
+library(gmodels)
+library(Hmisc)
+library(ggthemes)
+library(arules)
+library(tidyverse)
+```
+```{r}
+#LECTURA DE DATOS ARCHIVOS
+data_empleos_ingresos_2022 =read_excel('C:/Users/GContreras/Documents/MAESTRIA USAC/Q4 Introduccion mineria de datos/Proyecto/3. Encuesta de empleo e ingresos/2022.xlsx')
+View(data_empleos_ingresos_2022)
+
+data_empleos_ingresos_2021 =read_excel('C:/Users/GContreras/Documents/MAESTRIA USAC/Q4 Introduccion mineria de datos/Proyecto/3. Encuesta de empleo e ingresos/2021.xlsx')
+View(data_empleos_ingresos_2021)
+
+data_empleos_ingresos_2019 =read_excel('C:/Users/GContreras/Documents/MAESTRIA USAC/Q4 Introduccion mineria de datos/Proyecto/3. Encuesta de empleo e ingresos/2019.xlsx')
+View(data_empleos_ingresos_2019)
+
+#EXPLORACION DE DATOS, CANTIDADES, TIPO, DATOS NULOS
+glimpse(data_empleos_ingresos_2022)
+head(data_empleos_ingresos_2022)
+dim(data_empleos_ingresos_2022)
+#20173 318
+colnames(data_empleos_ingresos_2022)
+is.na(data_empleos_ingresos_2022)
+str(data_empleos_ingresos_2022)
+
+
+glimpse(data_empleos_ingresos_2021)
+head(data_empleos_ingresos_2021)
+dim(data_empleos_ingresos_2021)
+#24319 261
+
+glimpse(data_empleos_ingresos_2019)
+head(data_empleos_ingresos_2019)
+dim(data_empleos_ingresos_2019)
+#22977 323
+
+
+```
+
+
